@@ -68,7 +68,8 @@ Use the Factory Method pattern when
 - creator never really knows what concrete product was produced.
 ### ConcreteCreator (ChairMaker, TableMaker)
 - implement or override the base factory method, by creating and returning an instance of a ConcreteProduct.
-### Collaborations
+
+## Collaborations
 Creator relies on its subclasses to define the factory method so that it returns an instance of the appropriate ConcreteProduct.
 
 ## Consequences
@@ -205,3 +206,10 @@ Think of Simple Factory as a one-shot deal, while with Factory Method you are cr
 *Q: When to encapsulate object creation?*
 
 A:  If you have a class that isn’t likely to change, and you know it, then it’s not the end of the world if you instantiate a concrete class in your code. Think about it; we instantiate String objects all the time without thinking twice. Because String is very unlikely to change. If, on the other hand, a class you write is likely to change, you have some good techniques like the Factory Method to encapsulate that change.
+
+## References
+
+1. [Head First Design Patterns](https://www.amazon.com/Head-First-Design-Patterns-Brain-Friendly/dp/0596007124)
+2. [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?s=books&ie=UTF8&qid=1541448469&sr=1-1&keywords=elements+of+reusable)
+3. [Refactoring Guru](https://refactoring.guru/design-patterns/factory-method)
+4. [Source Making](https://sourcemaking.com/design_patterns/factory_method)
